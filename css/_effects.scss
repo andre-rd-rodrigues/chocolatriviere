@@ -1,0 +1,82 @@
+@mixin effects {
+  //Navbar underline
+  .navbar_padding {
+    padding-bottom: 15px;
+    .nav-link {
+      position: relative;
+      max-width: 90px;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        visibility: hidden;
+        background-color: bisque;
+        transition: all 0.3s ease;
+        transform: scaleX(0);
+      }
+      &:hover:after {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+//Main title
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+//Main arrow
+.pulsate-fwd {
+  animation: pulsate-fwd 0.8s ease-in-out infinite both;
+}
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+//Events arrow
+.fade-in-left {
+  animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+.fade-out-left {
+  animation: fade-out-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-out-left {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

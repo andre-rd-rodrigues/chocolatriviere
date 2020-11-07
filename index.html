@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="node_modules/flickity/css/flickity.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+
+    <title>Chocolate Riviére</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <a class="navbar-brand pl-2" href="#"><img src="./img/logo.png" alt="logo" class="logo"></a>
+      <button
+        class="navbar-toggler d-lg-none"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon text-white"><i class="fas fa-bars"></i></span>
+      </button>
+      
+      <div class="collapse navbar-collapse text-center" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active my-auto">
+            <a class="nav-link mx-auto" href="#home"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-auto" href="#services">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-auto" href="#shopping">SHOPPING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-auto" href="#footer">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <section class="main_section" id="home">
+      <div class="container-fluid">
+        <div class="main_div text-white pt-5">
+          <p class="main_subtitle text-center">- HANDMADE BOUTIQUE -</p>
+          <h1 class="main_title">
+            Chocolat <br /><span id="title_de">de</span>
+            <span id="title_riviere">riviére</span>
+          </h1>
+          <a href="#chef_id" class="text-white"
+          ><i class="fas fa-arrow-circle-down fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- FIRST SECTION -->
+    <section class="chef_section" id="chef_id">
+      <div class="container-fluid pt-2" 
+      >
+        <div class="row p-5 mt-5 d-flex align-items-center justify-contents-center">
+            <div class="col-md-6 text-center panel" data-entrance="from-left" >
+              <img
+                src="https://images.unsplash.com/photo-1579293907020-7570cc70cc9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                alt="chef_image"
+                class="chef_img img-fluid"
+              />
+            </div>
+            <div class="col-md-6 text-center pl-2 panel chef_div" data-entrance="from-right" data-entrance-delay="300">
+              <h1 class="grid_title pb-2">Us and Cocoa</h1>
+              <p class="grid_subtitle pb-3">ABOUT OUR PASSION</p>
+              <hr class="pb-3" />
+              <p class="chef_txt text-justify">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--PARALLAX -->
+    <div class="parallax">
+      <div
+        class="parallax-window parallax-1"
+        data-parallax="scroll"
+        data-image-src="img/parallax-1.jpeg"
+      ></div>
+    </div>
+      <!-- ORIGIN -->
+      <section class="origin_section">
+        <div class="container-fluid">
+          <div class="row p-5 mt-5">
+            <div class="col-md-6 panel my-auto pb-5" data-entrance="from-top">
+              <img src="./img/origin.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center sm-pr-4 panel origins_div my-auto" data-entrance="from-bottom">
+              <h1 class="grid_title pb-2">Origins</h1>
+              <p class="grid_subtitle pb-3">FAIRTRADE CHOCOLATE</p>
+              <hr class="pb-3" />
+              <p class="chef_txt text-justify">
+                Life is tough for cocoa farmers. The price of cocoa beans has slumped in recent years despite high demand. Disease and age are damaging cocoa trees and few young people are becoming cocoa farmers because of the poor prospects.
+                Fairtrade helps to make cocoa farming in places like Ivory Coast and Ghana more sustainable by guaranteeing minimum prices and providing a Fairtrade Premium to invest in local communities, so farmers can provide a better future for themselves and their families.
+                Every time you choose Fairtrade chocolate, you are supporting farmers and their communities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--PARALLAX -->
+    <figure class="mobile-translateY">
+      <div class="parallax quote-div ">
+        <div
+          class="parallax-window "
+          data-parallax="scroll"
+          data-image-src="img/parallax-2.jpeg"
+        >
+          <p id="parallax_title" class="panel d-inline" data-entrance="fade"><i>“Everything in this room is edible. Even I’m edible. But, that would be called cannibalism. It is looked down upon in most societies.”</i></p>
+          <p id="parallax_subtitle" class="panel" data-entrance="fade">- Willy Wonka -</p>
+      </div>
+      </div>
+    </figure>
+    <!--  SERVICES SECTION -->
+    <section class="events_section mobile-translateY" id="services">
+      <div class="containter-fluid">
+        <div class="row p-5 d-flex align-items-center events_row">
+          <div class="col-md-6  panel" data-entrance="from-left" id="events_col_txt">
+            <h1 class="grid_title pb-2">Services and Events</h1>
+            <p class="grid_subtitle pb-3">FOR THE SWEETEST MOMENTS</p>
+            <hr class="pb-3" />
+            <p class="grid_txt ">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+              ab. Magnam, ratione, rem aliquam soluta qui veniam, repellendus quam
+              facilis quis libero saepe. Ipsum aliquam accusamus ipsam rem
+              quibusdam dolor.Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Nostrum, ab.Magnam, ratione, rem aliquam soluta qui veniam,
+              repellendus quam facilis quis libero saepe. Ipsum aliquam accusamus
+              ipsam rem
+            </p>
+             
+          </div>
+          <div class="col-md-6  panel" data-entrance="from-right" data-entrance-delay="300">
+            <img src="img/service-1.jpg" alt="" class="img-fluid events_img">
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+    <section class="events_section">
+      <div class="containter-fluid">
+        <div class="row p-5 d-flex align-items-center events_row">
+          <div class="col-md-6 panel table-service" data-entrance="from-right" data-entrance-delay="300">
+            <img src="img/service-2.jpg" alt="Table service" class="img-fluid events_img">
+        </div>
+          <div class="col-md-6 panel" data-entrance="from-left" id="events_col_txt">
+            <h1 class="grid_title pb-2">Transparency and Trust</h1>
+            <p class="grid_subtitle pb-3">CANDIED CONFIDENTIALITY AND HONESTY</p>
+            <hr class="pb-3" />
+            <p class="grid_txt ">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+            </p>
+              <div class="event_link_div">
+                <span class="arrow-right">&#x2192;</span>
+              <a href="#shopping" id="event_link" class="ml-2">Watch selection</a>
+            </div>
+          </div>
+       
+      </div>
+      </div>
+    </div>
+    </section>
+ 
+    <!-- PARALLAX -->
+<figure class="mobile-translateY">
+  <div class="parallax " style="height: 300px;">
+    <div
+      class="parallax-window"
+      data-parallax="scroll"
+      data-image-src="img/parallax-3.jpeg"
+    >
+  </div>
+  </div>
+</figure>
+   <!--  
+    MENU -->
+  <section id="shopping" class="pt-5">
+    <div class="container">
+      <h1 class="text-center grid_title">Chocolate Gifts</h1>
+      <p class="grid_subtitle text-uppercase text-center my-4">Original, authentic, ethical</p>
+      <hr class="py-3" />
+     <p class="text-center w-75 mx-auto">Whether you’re looking for <b>boxed chocolates, luxury gifts,</b>  or<b> giant chocolate bars</b> for birthdays, anniversaries, celebrations, or even apologies - you’ll find it here. Our <b>principles</b> and <b>quality</b> have taken us to over 150 chocolate shops, cafe's, restaurants and even a cocoa estate hotel.
+      </p>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-4 text-center">
+            <div style="max-width: 400px; max-height: 400px;" class="mx-auto">
+              <img src="img/gift-sentence.jpg" alt="personalized chocolate" class="img-fluid" >
+            </div>
+            <p class="text-uppercase mt-4 shop-gift" >personalized statements</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div style="max-width: 400px; max-height: 400px;" class="mx-auto">
+              <img src="img/gift-bags.jpg" alt="beauty & chocolate" class="img-fluid" >
+            </div>
+            <p class="text-uppercase mt-4 shop-gift " >gift bags</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div style="max-width: 400px; max-height: 400px;" class="mx-auto">
+              <img src="img/gift-alcool.jpg" alt="personalized chocolate" class="img-fluid" >
+            </div>
+            <p class="text-uppercase mt-4 shop-gift " >with alchool </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid mt-5 shopping-section">
+  <div class="container">
+    <div class="row">
+      <div
+      class="col-md-6">
+        <img src="img/gift-background.png" alt="gift box" class="img-fluid">
+      </div>
+     <div class="col-md-6 text-white d-flex justify-content-center flex-column">
+        <h1 class="display-3 vibes sweet-candy spacing">Sweet Candy</h1>
+        <p class="text-justify sweet-p">Our most popular chocolate boxes, perfect for any occasion.</p>
+        <a role="button" class="btn btn-dark rounded-0 visit-btn" href="#map" id="order-btn">VISIT US</a>
+    </div>
+  </div>
+</div>
+<div class="carousel my-5" data-flickity='{ "groupCells": true, "autoPlay": 3000, "selectedAttraction": 0.06, "friction": 0.8  }'>
+  <div class="carousel-cell"><img src="img/choc-1.jpg" alt="all-in-one chocolates"><p class="text-center">all-in-one </br>£22.95</p></div>
+  <div class="carousel-cell"><img src="img/choc-2.jpg" alt="27 iconic chocolates"><p class="text-center">milk to caramel</br>£22.95</p></div>
+  <div class="carousel-cell"><img src="img/choc-3.jpg" alt="27 iconic chocolates"><p class="text-center">fruity </br>£22.95</p></div>
+  <div class="carousel-cell"><img src="img/choc-4.jpg" alt="27 iconic chocolates"><p class="text-center">milk to caramel h</br>£12.95</p></div>
+  <div class="carousel-cell"><img src="img/choc-5.jpg" alt="27 iconic chocolates"><p class="text-center">tipsy truffles</br>£22.95</p></div>
+  <div class="carousel-cell"><img src="img/choc-6.jpg" alt="27 iconic chocolates"><p class="text-center">patisserie </br>£22.95</p></div>
+  <div class="carousel-cell"><img src="img/choc-7.jpg" alt="27 iconic chocolates"><p class="text-center">dark </br>£22.95</p></div>
+  <div class="carousel-cell"><img src="img/choc-8.jpg" alt="27 iconic chocolates"><p class="text-center">fruity h </br>£12.95</p></div>
+  <div class="carousel-cell"><img src="img/choc-9.jpg" alt="27 iconic chocolates"><p class="text-center">patissierie h </br>£12.95</p></div>
+
+</div>
+</section>
+<div class="container my-5" id='map'>
+  <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=1%C2%BA%20Grafton%20Street,%20Dublin,%20Ireland+(Chocolat%20de%20rivi%C3%A9re)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+</div>
+    <!-- CONTACT -->
+    <footer class="footer_section mt-4 panel" id="footer" data-entrance="fade">
+      <div class="container">
+        <div class="contact_title text-center">
+          <h1 class="grid_title">Contact us</h1>
+          <span><a href="#" class="grid_subtitle contact_email">INFO@MYSITE.COM</span></a>
+          <span class="mx-3 grid_subtitle">|</span>
+          <span class="grid_subtitle" style="font-weight: 400">  TEL: (10)3716-8739</span>
+          <hr class="pb-4">
+        </div>
+        <!-- FORM -->
+        <form class="p-3">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email adress">
+            <small id="emailHelp" class="form-text text-muted">We don't share your personal data with third parties.</small>
+          </div>  
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+            </div>
+            <div class="form-group col-md-6 textarea_div">
+            <label for="exampleFormControlTextarea1">Write your message here...</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary ml-auto form_btn">SEND</button>
+          </div>
+        </form>
+      </div>
+      <div class="copyright text-center d-flex justify-content-center" >
+        <p class="copyright_txt m-0 align-self-center">
+          Copyright © 2010 by André Rodrigues
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/Parallax/parallax.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./node_modules/scroll-entrance/dist/scroll-entrance.js"></script>
+   
+    <script src="/myScript.js"></script>
+  </body>
+</html>

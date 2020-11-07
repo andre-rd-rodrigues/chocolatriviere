@@ -1,0 +1,86 @@
+@mixin media {
+  /*=============================================
+  =                   Tablet                   =
+  =============================================*/
+  @media only screen and (max-width: 767px) {
+    //sections
+    .chef_section {
+      height: 140vh;
+    }
+    .events_section {
+      height: 120vh;
+      #events_col_txt {
+        padding: 20px 0 60px 0;
+      }
+    }
+    .origin_section {
+      height: 150vh;
+    }
+    .footer_section {
+      padding-top: 15%;
+      .textarea_div {
+        height: 180px;
+        margin-bottom: -20px;
+      }
+      textarea {
+        height: 50%;
+      }
+    }
+
+    //Others
+    .parallax {
+      margin-top: 200px;
+    }
+
+    .chef_div,
+    .origins_div {
+      margin-top: 60px;
+    }
+
+    .events_row {
+      margin: 0;
+    }
+  }
+
+  /*=============================================
+  =                   Mobile                   =
+  =============================================*/
+  @media only screen and (max-width: 540px) {
+    .mobile-translateY {
+      transform: translateY(-200px);
+    }
+    .table-service {
+      display: none;
+    }
+    #shopping {
+      transform: translateY(-100px);
+    }
+    .shopping-section {
+      transform: translateY(-150px);
+    }
+    .shop-gift {
+      margin: 100px 0;
+      color: rgb(189, 155, 109);
+    }
+
+    .sweet-candy {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .sweet-p {
+      display: block;
+      margin: auto;
+      padding-bottom: 20px;
+    }
+    .visit-btn {
+      width: 90%;
+      display: block;
+      margin: auto;
+    }
+    .carousel-cell {
+      height: 300px;
+    }
+  }
+
+  /*============  End of Mobile  =============*/
+}

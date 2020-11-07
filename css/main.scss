@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap);
+@import "mixins";
+@import "effects";
+@import "responsive";
+@include effects;
+@include media;
+
+[data-entrance] {
+  visibility: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.vibes {
+  font-family: "Great Vibes", handwriting;
+}
+
+/* NAVBAR */
+
+nav {
+  background-color: rgba(34, 34, 34, 0.845);
+  .logo {
+    width: 35px;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    transition: 0.1s linear;
+    position: relative;
+    @include hover_underline;
+    &:hover {
+      color: bisque;
+    }
+  }
+  .nav-item {
+    padding-left: 20px;
+  }
+  .fa-bars {
+    font-size: 30px;
+  }
+}
+
+/*   TEXT */
+
+.grid_title {
+  font-family: "Great Vibes", handwriting;
+  font-size: 50px;
+  color: rgb(189, 153, 105);
+}
+.grid_subtitle {
+  font-weight: 400;
+  color: rgb(216, 187, 148);
+}
+.grid_txt {
+  text-align: justify;
+}
+
+/* SECTION ONE */
+.main_section {
+  background: linear-gradient(
+      to bottom,
+      rgba(121, 121, 121, 0.283),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url("https://images.unsplash.com/photo-1541779774450-da0f04dd9080?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80")
+      no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  @include flex;
+
+  .main_div {
+    @include flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+
+    h1 {
+      font-family: "Great Vibes", handwriting;
+      font-size: 120px;
+      font-weight: bold;
+    }
+    p {
+      font-size: smaller;
+      font-weight: 400;
+      letter-spacing: 4px;
+    }
+    #title_de {
+      font-size: 50px;
+      font-weight: normal;
+      position: relative;
+      bottom: 80px;
+      right: -50px;
+    }
+    #title_riviere {
+      font-size: smaller;
+      font-weight: normal;
+      position: relative;
+      bottom: 50px;
+      right: -35px;
+    }
+    a {
+      transform: translateY(40px);
+      i {
+        transition: 0.2s ease;
+        &:hover {
+          color: rgb(250, 235, 216);
+        }
+      }
+    }
+  }
+}
+
+/* SECTION TWO */
+
+.chef_img {
+  width: 350px;
+  box-shadow: 0 5px 6px 1px rgb(85, 85, 85);
+}
+
+/* Parallax */
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+  @include flex;
+  flex-direction: column;
+}
+.parallax {
+  height: 60vh;
+}
+
+/* SECTION EVENTS */
+
+.row_events {
+  height: 100vh;
+  @include flex;
+}
+#events_col_txt {
+  text-align: center;
+  position: relative;
+}
+
+.event_link_div {
+  width: 100%;
+  @include flex;
+  justify-content: flex-end;
+
+  #event_link {
+    color: rgb(216, 187, 148);
+    transition: 0.3s ease;
+    &:hover {
+      color: rgb(181, 135, 76);
+      text-decoration: none;
+    }
+  }
+  .arrow-right {
+    display: none;
+    color: rgb(216, 187, 148);
+  }
+}
+
+/* QUOTE */
+.quote-div {
+  background-color: rgba(0, 0, 0, 0.413);
+  color: white;
+  height: 400px;
+
+  #parallax_title {
+    font-family: serif;
+    padding: 0px 40px;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+  #parallax_subtitle {
+    text-transform: uppercase;
+    padding: 0px 40px;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 400;
+    letter-spacing: 4px;
+  }
+}
+
+/* SHOPPING */
+
+.shop-gift {
+  font-weight: 500;
+  font-size: 14px;
+}
+.shopping-section {
+  background-color: #8a9d9d;
+  padding: 35px 0;
+}
+#order-btn {
+  transition: 0.3s ease;
+}
+
+.spacing {
+  letter-spacing: 3px;
+}
+
+/*=============================================
+=                   Shopping Carousel                   =
+=============================================*/
+
+.carousel-cell {
+  & > img {
+    max-width: 250px;
+    padding: 10px;
+  }
+  & > p {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+/*============  End of Shopping Carousel  =============*/
+
+/* CONTACT */
+
+.contact_email {
+  transition: 0.3s ease;
+  &:hover {
+    color: rgb(154, 129, 92);
+    text-decoration: none;
+  }
+}
+.copyright {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(34, 34, 34, 0.845);
+  color: white;
+  width: 100%;
+  height: 40px;
+  .copyright_txt {
+    font-size: 14px;
+  }
+}
+.form_btn {
+  padding: 5px 30px;
+  border-radius: 0;
+  border: none;
+  background-color: rgb(189, 155, 109);
+  transition: 0.3s ease;
+  &:hover {
+    background-color: rgb(159, 125, 78);
+  }
+}
