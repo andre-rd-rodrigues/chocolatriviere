@@ -1,0 +1,27 @@
+{
+  "name": "chocolatereviere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myScript.js",
+  "dependencies": {
+    "@popperjs/core": "^2.5.4",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.5.3",
+    "flickity": "^2.2.1",
+    "gh-pages": "^3.1.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "scroll-entrance": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://andre-rd-rodrigues.github.io/chocolatriviere/"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://andre-rd-rodrigues.github.io/chocolatriviere/"
+}
