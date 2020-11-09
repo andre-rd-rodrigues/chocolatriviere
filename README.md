@@ -5,9 +5,14 @@ Chocolat de Riviére is an original fictitious company project, inspired by my l
 Website: https://andre-rd-rodrigues.github.io/chocolatriviere
 
 # Languages
-HTML, CSS, SASS, Bootstrap, Javascript
+- HTML
+- CSS
+- SASS
+- Bootstrap
+- Jquery
+- Javascript
 
 
 # Web Design
-Affinity Designer
-Affinity Publisher
+- Affinity Designer
+- Affinity Publisher
